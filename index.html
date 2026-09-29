@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title></title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+var histlength=history.length;history.go(-histlength 2);
+</script>
+<h1 id=msgs></h1
+<hr>
+<br>
+<div id=menu>
+<h1 style="font-size: 25px;color: white;">نظام التعديل من 9.00 الى 13.52</h1>
+<button class="btn btn-multi" onmouseout="msgs.innerHTML='" onclick="location.replace('source/index.html')"> اضغط هنا للبدء </button>
+
+<h1 style="margin-top: 25px;"></h1>
+</div>
+<div id=crypto>
+<h1 style="font-size: 18px;color: black;"></h1>
+<img src="btc.jpg" width="150" height="150">
+<br>
+<h1 style="font-size: 18px;"></h1>
+<br>
+<h1 style="font-size: 18px;color: black;"></h1>
+<img src="eth.jpg" width="150" height="150">
+<h1 style="font-size: 18px;"></h1>
+<button class="btn" onclick="load_menu()"></button>
+</div>
+<script>
+function donations(){
+document.getElementById("crypto").style.display = "block";
+document.getElementById("menu").style.display = "none";
+}
+
+function load_menu(){
+document.getElementById("menu").style.display = "block";
+document.getElementById("crypto").style.display = "none";
+}
+</script>
+</body>
+</html>

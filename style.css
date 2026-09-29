@@ -1,0 +1,137 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url('img.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #24272b;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: transparent;
+    overflow: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 25px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#progress {
+    display: block;
+}
+
+#menu {
+    display: block;
+}
+
+#crypto {
+    display: none;
+}
+
+#tools {
+    display: none;
+}
+
+#lnx {
+    display: none;
+}
+
+#mods {
+    display: none;
+}
+
+.btn {
+    background-color: #003263;
+    color: white;
+    width: 227px;
+    height: 46px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+}
+
+.btn-onln {
+    background-color: #076300;
+}
+
+.btn-onln:hover {
+    background-color: #18891b;
+}
+
+.btn-toolbox {
+    background-color: #ae2301;
+}
+
+.btn-toolbox:hover {
+    background-color: #d42a01;
+}
+
+.btn-multi {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    font-weight: bold;
+    text-shadow:
+        0 2px 3px rgba(0, 0, 0, 0.95),
+        0 0 8px rgba(0, 0, 0, 0.85);
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.75),
+        0 0 18px rgba(0, 0, 0, 0.45);
+}
+
+.btn-multi:hover {
+    background-color: #2c8df5;
+    box-shadow:
+        0 5px 16px rgba(0, 0, 0, 0.85),
+        0 0 22px rgba(0, 0, 0, 0.55);
+}
+
+/* PS4 Browser viewport optimization */
+@media screen and (min-width: 1000px) {
+    html {
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #menu {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn {
+        box-sizing: border-box;
+        max-width: 90vw;
+    }
+}
