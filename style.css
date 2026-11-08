@@ -1,0 +1,216 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url('img.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #24272b;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: transparent;
+    overflow: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 25px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#progress {
+    display: block;
+}
+
+#menu {
+    display: block;
+}
+
+#crypto {
+    display: none;
+}
+
+#tools {
+    display: none;
+}
+
+#lnx {
+    display: none;
+}
+
+#mods {
+    display: none;
+}
+
+.btn {
+    background-color: #003263;
+    color: white;
+    width: 227px;
+    height: 46px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+}
+
+.btn-onln {
+    background-color: #076300;
+}
+
+.btn-onln:hover {
+    background-color: #18891b;
+}
+
+.btn-toolbox {
+    background-color: #ae2301;
+}
+
+.btn-toolbox:hover {
+    background-color: #d42a01;
+}
+
+.btn-multi {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    font-weight: bold;
+    text-shadow:
+        0 2px 3px rgba(0, 0, 0, 0.95),
+        0 0 8px rgba(0, 0, 0, 0.85);
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.75),
+        0 0 18px rgba(0, 0, 0, 0.45);
+}
+
+.btn-multi:hover {
+    background-color: #2c8df5;
+    box-shadow:
+        0 5px 16px rgba(0, 0, 0, 0.85),
+        0 0 22px rgba(0, 0, 0, 0.55);
+}
+
+/* PS4 Browser viewport optimization */
+@media screen and (min-width: 1000px) {
+    html {
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #menu {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn {
+        box-sizing: border-box;
+        max-width: 90vw;
+    }
+}
+
+
+/* GoldHEN activation progress indicator */
+#progress {
+    display: block;
+    width: 90%;
+    max-width: 420px;
+    margin: 16px auto;
+    padding: 12px;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.72);
+    border: 1px solid rgba(0, 153, 255, 0.75);
+    border-radius: 8px;
+    text-align: center;
+    text-shadow: 0 1px 3px #000;
+    box-shadow: 0 0 14px rgba(0, 105, 217, 0.35);
+}
+
+/* Supports common progress element IDs/classes used by the page */
+#progressBar,
+.progress-bar,
+#progress progress {
+    display: block;
+    width: 100%;
+    height: 18px;
+    margin: 8px auto 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 9px;
+    background: #202832;
+    accent-color: #00aaff;
+}
+
+#progressBar,
+.progress-bar {
+    position: relative;
+}
+
+#progressBar .fill,
+.progress-bar .fill,
+#progressFill {
+    display: block;
+    width: 0%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #0069d9, #00d4ff);
+    transition: width 0.25s ease;
+}
+
+#progressText,
+.progress-text {
+    display: block;
+    margin-top: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#progressStatus,
+.progress-status {
+    display: block;
+    margin-top: 5px;
+    color: #d9efff;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    #progress {
+        width: 94%;
+        padding: 10px;
+    }
+
+    #progressText,
+    .progress-text {
+        font-size: 16px;
+    }
+}
